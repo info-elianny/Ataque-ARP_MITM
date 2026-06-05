@@ -1,11 +1,5 @@
 # 🛡️ Ataque ARP Spoofing - Man in the Middle (MITM)
 
-**Estudiante:** Elianny Bastardo Martich  
-**Matrícula:** 2025-0661  
-**Materia:** Seguridad de Redes  
-**Docente:** Jonathan Esteban Rondon Corniel  
-**Fecha:** 5 de junio 2026  
-
 📹 [Video demostración](https://youtu.be/oj0Hj4uqqew) | 📂 [Repositorio](https://github.com/info-elianny/Ataque-ARP_MITM)
 
 ---
