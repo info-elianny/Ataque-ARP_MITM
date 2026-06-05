@@ -132,3 +132,4 @@ Aislar los dispositivos en diferentes VLANs, lo cual limita el alcance del ataca
 ---
 
 > ⚠️ **Este script es únicamente con fines educativos y de investigación en entornos controlados.**
+> ⚠️ **BY: Elianny**
