@@ -106,7 +106,7 @@ sudo python3 arp_mitm.py
 ### 1. Dynamic ARP Inspection (DAI)
 Función de seguridad aplicada en los switches que intercepta y valida todos los paquetes ARP. El switch compara cada ARP Reply contra la tabla de DHCP Snooping. Si la combinación de MAC e IP no coincide con una entrada legítima, el paquete es descartado y se genera una alerta en los logs.
 
-
+```
 SW1(config)# ip dhcp snooping
 SW1(config)# ip dhcp snooping vlan 1
 SW1(config)# no ip dhcp snooping information option
@@ -115,30 +115,30 @@ SW1(config)# interface e0/0
 SW1(config-if)# ip dhcp snooping trust
 SW1(config-if)# ip arp inspection trust
 SW1(config-if)# exit
-
+```
 
 ![DAI resultado](https://res.cloudinary.com/drzcveg06/image/upload/v1780768496/ARP-M-1_hy3wwq.png)
 
 ### 2. ARP Estático
 Fijar manualmente la MAC del Gateway en cada host para que no pueda ser modificada por ARPs falsos.
 
-
+```
 arp -s 6.6.1.1 aa-bb-cc-dd-ee-ff
-
+```
 
 ![ARP Estático resultado](https://res.cloudinary.com/drzcveg06/image/upload/v1780768520/ARP-M-2_xqtwgd.png)
 
 ### 3. Segmentación de Red (VLANs)
 Aislar los dispositivos en diferentes VLANs, lo cual limita el alcance del atacante si logra comprometer un segmento de la red.
 
-
+```
 SW1(config)# vlan 10
 SW1(config-vlan)# name USUARIOS
 SW1(config-vlan)# exit
 SW1(config)# vlan 20
 SW1(config-vlan)# name ATACANTES
 SW1(config-vlan)# exit
-
+```
 
 ![VLANs resultado](https://res.cloudinary.com/drzcveg06/image/upload/v1780768553/ARP-M-3_guurky.png)
 
