@@ -1,6 +1,6 @@
 # 🛡️ Ataque ARP Spoofing - Man in the Middle (MITM)
 
-📹 [Video demostración](https://youtu.be/oj0Hj4uqqew) | 📂 [Repositorio](https://github.com/info-elianny/Ataque-ARP_MITM)
+📹 [Video demostración](https://youtu.be/oj0Hj4uqqew)
 
 ---
 
